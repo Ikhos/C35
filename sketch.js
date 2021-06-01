@@ -17,6 +17,24 @@ function draw() {
     balloonT.getPosY();
     balloonT.updatePosY(balloonT.y);
   }
+  
+  if(keyIsDown(UP_ARROW)) {
+    balloonT.y--;
+    balloonT.getPosY();
+    balloonT.updatePosY(balloonT.y);
+  }
+  
+  if(keyIsDown(LEFT_ARROW)) {
+    balloonT.y--;
+    balloonT.getPosX();
+    balloonT.updatePosX(balloonT.x);
+  }
+  
+  if(keyIsDown(RIGHT_ARROW)) {
+    balloonT.y++;
+    balloonT.getPosX();
+    balloonT.updatePosX(balloonT.x);
+  }
 
   balloonT.display();
   drawSprites();
